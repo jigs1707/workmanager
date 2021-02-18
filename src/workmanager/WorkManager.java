@@ -68,7 +68,7 @@ public class WorkManager extends Application
     {
         launch(args);
         
-        System.out.println(" g");
+        System.out.println(" a");
     }
        /* try {
             
