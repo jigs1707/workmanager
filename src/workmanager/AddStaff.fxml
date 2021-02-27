@@ -11,8 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" fx:id="addStaff" prefHeight="450.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="workmanager.AddStaffController">
+<AnchorPane id="AnchorPane" fx:id="addStaff" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workmanager.AddStaffController">
    <children>
       <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToCreateAccount" onMouseClicked="#backToCreateAccount" prefHeight="30.0" text="&lt; Back " />
       <GridPane layoutX="60.0" layoutY="85.0" prefHeight="300.0" prefWidth="500.0">

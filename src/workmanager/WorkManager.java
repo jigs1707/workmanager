@@ -37,7 +37,7 @@ public class WorkManager extends Application
     public void start(Stage primaryStage) {
        try
                         {
-			FXMLLoader loader = new FXMLLoader(WorkManager.class.getResource("AddStaff.fxml"));
+			FXMLLoader loader = new FXMLLoader(WorkManager.class.getResource("LoginScreen.fxml"));
 			AnchorPane pane = loader.load();
 			
 			Scene scene = new Scene(pane);

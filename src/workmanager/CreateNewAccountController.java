@@ -95,13 +95,13 @@ public class CreateNewAccountController {
 
                 try {
                     
-                     String host = "jdbc:derby://localhost:1527/WorkManager";
+                  /*   String host = "jdbc:derby://localhost:1527/WorkManager";
             String uName = "administration";
             String uPass = "admin";
 
             con = DriverManager.getConnection(host, uName, uPass);
 
-            stmt = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+            stmt = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);*/
                     
                     
                     PreparedStatement ps = con.prepareStatement(sql);

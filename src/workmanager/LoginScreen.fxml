@@ -11,8 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="workmanager.LoginScreenController">
+<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workmanager.LoginScreenController">
    <children>
       <GridPane layoutX="21.0" layoutY="100.0" prefHeight="100.0" prefWidth="400.0">
         <columnConstraints>
@@ -46,7 +45,7 @@
             </PasswordField>
          </children>
       </GridPane>
-      <Button fx:id="login" layoutX="146.0" layoutY="224.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" text="Login">
+      <Button fx:id="login" layoutX="146.0" layoutY="224.0" mnemonicParsing="false" onAction="#loginTrial" onMousePressed="#loginTrial" prefHeight="40.0" prefWidth="150.0" text="Login">
          <font>
             <Font name="System Bold Italic" size="20.0" />
          </font>
