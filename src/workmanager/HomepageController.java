@@ -61,6 +61,7 @@ public class HomepageController {
         } 
         catch (IOException ex) {
             ex.printStackTrace();
+            ex.getMessage();
         }
     }
 
