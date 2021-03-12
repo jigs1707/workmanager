@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workmanager.ProfileController">
+   <children>
+      <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Menu">
+               <items>
+                  <MenuItem fx:id="menuProfile" disable="true" mnemonicParsing="false" text="Profile" />
+                  <MenuItem fx:id="menuAvailabilities" mnemonicParsing="false" text="Availabilities" />
+                  <MenuItem fx:id="menuRoster" mnemonicParsing="false" text="Roster" />
+                  <MenuItem fx:id="menuStaff" mnemonicParsing="false" text="Staff" />
+                  <MenuItem fx:id="menuStatus" mnemonicParsing="false" text="Status" />
+                  <MenuItem fx:id="menuSignout" mnemonicParsing="false" text="Sign-Out" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

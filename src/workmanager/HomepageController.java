@@ -19,7 +19,22 @@ import javafx.stage.Stage;
 public class HomepageController {
 
     @FXML
-    private MenuItem exit;
+    private MenuItem menuProfile;
+
+    @FXML
+    private MenuItem menuAvailabilities;
+
+    @FXML
+    private MenuItem menuRoster;
+
+    @FXML
+    private MenuItem menuStaff;
+
+    @FXML
+    private MenuItem menuStatus;
+
+    @FXML
+    private MenuItem menuSignout;
 
     @FXML
     private Button profile;
@@ -57,6 +72,32 @@ public class HomepageController {
             primaryStage.show();
             
             Stage stage = (Stage) signOut.getScene().getWindow();
+            stage.close();
+        } 
+        catch (IOException ex) {
+            ex.printStackTrace();
+            ex.getMessage();
+        }
+    }
+    
+    
+    public void onProfile()
+    {
+                try {
+            FXMLLoader loader = new FXMLLoader(WorkManager.class.getResource("Profile.fxml"));
+            AnchorPane pane = loader.load();
+            
+            Scene scene = new Scene(pane);
+            
+            
+            Stage primaryStage = new Stage();
+            
+            primaryStage.setScene(scene);
+            primaryStage.setTitle("Profile");
+            primaryStage.setResizable(false);
+            primaryStage.show();
+            
+            Stage stage = (Stage) profile.getScene().getWindow();
             stage.close();
         } 
         catch (IOException ex) {

@@ -13,19 +13,14 @@
    <children>
       <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
-          <Menu mnemonicParsing="false" text="File">
+          <Menu mnemonicParsing="false" text="Menu">
             <items>
-              <MenuItem fx:id="exit" disable="true" mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem disable="true" mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem disable="true" mnemonicParsing="false" text="About" />
+              <MenuItem fx:id="menuProfile" disable="true" mnemonicParsing="false" text="Profile" />
+                  <MenuItem fx:id="menuAvailabilities" disable="true" mnemonicParsing="false" text="Availabilities" />
+                  <MenuItem fx:id="menuRoster" disable="true" mnemonicParsing="false" text="Roster" />
+                  <MenuItem fx:id="menuStaff" disable="true" mnemonicParsing="false" text="Staff" />
+                  <MenuItem fx:id="menuStatus" disable="true" mnemonicParsing="false" text="Status" />
+                  <MenuItem fx:id="menuSignout" disable="true" mnemonicParsing="false" text="Sign-Out" />
             </items>
           </Menu>
         </menus>
@@ -41,7 +36,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="profile" mnemonicParsing="false" prefHeight="110.0" prefWidth="155.0" style="-fx-background-color: FireBrick;" text="Profile" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button fx:id="profile" mnemonicParsing="false" onAction="#onProfile" onMousePressed="#onProfile" prefHeight="110.0" prefWidth="155.0" style="-fx-background-color: FireBrick;" text="Profile" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
             <Button fx:id="availabilities" mnemonicParsing="false" prefHeight="110.0" prefWidth="155.0" style="-fx-background-color: orange;" text="Send out availabilities" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
             <Button fx:id="roster" mnemonicParsing="false" prefHeight="110.0" prefWidth="155.0" style="-fx-background-color: Aquamarine;" text="Roster" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
             <Button fx:id="staff" mnemonicParsing="false" prefHeight="110.0" prefWidth="155.0" style="-fx-background-color: DarkGoldenRod;" text="Staff" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
