@@ -69,7 +69,7 @@
                   <Font size="17.0" />
                </font>
             </TextField>
-            <TextField fx:id="password" editable="false" onAction="#generateRandomString" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <TextField fx:id="password" editable="true" onAction="#generateRandomString" onMouseClicked="#generateRandomString" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font size="17.0" />
                </font>
@@ -98,5 +98,6 @@
          </children>
       </GridPane>
       <Button fx:id="finish" layoutX="521.0" layoutY="413.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="65.0" text="Finish" />
+      <Label fx:id="label" layoutX="250.0" layoutY="44.0" text="j" />
    </children>
 </AnchorPane>

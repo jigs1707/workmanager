@@ -9,14 +9,14 @@ import java.util.Random;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
+import javafx.scene.control.Button; 
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
+//eee
 public class AddStaffController {
 
         
@@ -46,8 +46,13 @@ public class AddStaffController {
 
     @FXML
     private Button finish;
+    @FXML
+    private AnchorPane addStaff;
+    @FXML
+    private Label label;
 
-public void backToCreateAccount()
+    @FXML
+    public void backToCreateAccount()
 {
      try
                         {
@@ -63,7 +68,6 @@ public void backToCreateAccount()
 			primaryStage.setTitle("Create New Account");
                         primaryStage.setResizable(false);
 			primaryStage.show();
-                        
                         Stage stage = (Stage) back.getScene().getWindow();
                             stage.close();
                        
@@ -80,7 +84,8 @@ public void backToCreateAccount()
 }
 
 
-public void generateRandomString()
+    @FXML
+    public void generateRandomString()
 {
     String alphabet = "abcdefghijklmnopqrstuvwxyz";
 
@@ -121,5 +126,5 @@ public void generateRandomString()
    
     
 }
-
 }
+
