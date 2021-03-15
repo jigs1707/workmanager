@@ -5,6 +5,7 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workmanager.ProfileController">
    <children>
@@ -17,12 +18,16 @@
                   <MenuItem fx:id="menuRoster" mnemonicParsing="false" text="Roster" />
                   <MenuItem fx:id="menuStaff" mnemonicParsing="false" text="Staff" />
                   <MenuItem fx:id="menuStatus" mnemonicParsing="false" text="Status" />
-                  <MenuItem fx:id="menuSignout" mnemonicParsing="false" text="Sign-Out" />
+                  <MenuItem fx:id="menuSignout" mnemonicParsing="false" onAction="#signOut" text="Sign-Out" />
                </items>
             </Menu>
          </menus>
       </MenuBar>
-      <Label layoutX="40.0" layoutY="62.0" text="Company Name:" />
-      <Label fx:id="cName" layoutX="210.0" layoutY="62.0" prefHeight="17.0" prefWidth="92.0" />
+      <Label layoutX="40.0" layoutY="62.0" prefHeight="25.0" prefWidth="127.0" text="Company Name:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="cName" layoutX="182.0" layoutY="62.0" prefHeight="25.0" prefWidth="127.0" />
    </children>
 </AnchorPane>
