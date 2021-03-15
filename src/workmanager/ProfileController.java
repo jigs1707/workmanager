@@ -5,10 +5,14 @@
  */
 package workmanager;
 
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 
-public class ProfileController {
+public class ProfileController implements Initializable{
 
     @FXML
     private MenuItem menuProfile;
@@ -27,6 +31,27 @@ public class ProfileController {
 
     @FXML
     private MenuItem menuSignout;
+
+    @FXML
+    private Label cName;
+    
+   
+    
+    
+    public void setCompanyName()
+    {
+        cName.setText("name");
+    }
+
+   
+    
+    
+    
+    @Override
+    public void initialize(URL location, ResourceBundle resources) 
+    {
+        setCompanyName();
+    }
 
 }
 

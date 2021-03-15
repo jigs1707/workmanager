@@ -3,7 +3,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -11,7 +10,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="addStaff" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workmanager.AddStaffController">
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workmanager.AddStaffController">
    <children>
       <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToCreateAccount" onMouseClicked="#backToCreateAccount" prefHeight="30.0" text="&lt; Back " />
       <GridPane layoutX="60.0" layoutY="85.0" prefHeight="300.0" prefWidth="500.0">
@@ -64,12 +63,12 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <TextField fx:id="username" editable="false" onAction="#generateRandomString" GridPane.columnIndex="1">
+            <TextField fx:id="username" editable="false" GridPane.columnIndex="1">
                <font>
                   <Font size="17.0" />
                </font>
             </TextField>
-            <TextField fx:id="password" editable="false" onAction="#generateRandomString" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <TextField fx:id="password" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font size="17.0" />
                </font>
@@ -89,12 +88,12 @@
                   <Font size="17.0" />
                </font>
             </TextField>
-            <PasswordField fx:id="fName" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <ChoiceBox fx:id="rank" prefHeight="30.0" prefWidth="300.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+            <TextField fx:id="fName" prefHeight="34.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font size="17.0" />
                </font>
-            </PasswordField>
-            <ChoiceBox fx:id="rank" prefHeight="30.0" prefWidth="300.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+            </TextField>
          </children>
       </GridPane>
       <Button fx:id="finish" layoutX="521.0" layoutY="413.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="65.0" text="Finish" />

@@ -5,9 +5,12 @@
  */
 package workmanager;
 
+import java.net.URL;
 import java.util.Random;
+import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
@@ -17,10 +20,10 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class AddStaffController {
+public class AddStaffController implements Initializable{
 
         
-    @FXML
+     @FXML
     private Button back;
 
     @FXML
@@ -39,13 +42,14 @@ public class AddStaffController {
     private TextField phone;
 
     @FXML
-    private PasswordField fName;
-
-    @FXML
     private ChoiceBox<?> rank;
 
     @FXML
+    private TextField fName;
+
+    @FXML
     private Button finish;
+
 
 public void backToCreateAccount()
 {
@@ -117,9 +121,13 @@ public void generateRandomString()
     
     password.setText(pword);
     
-    
    
-    
 }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) 
+    {
+        generateRandomString();
+    }
 
 }
