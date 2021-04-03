@@ -14,6 +14,8 @@ import java.sql.Statement;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -92,6 +94,7 @@ public class CreateNewAccountController {
        
         
         String sql = "INSERT INTO COMPANYDETAILS (COMPANYNAME, USERNAME, PASSWORD, FIRSTNAME, LASTNAME, EMAIL, PHONE) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        
 
                 try {
                     
@@ -105,7 +108,8 @@ public class CreateNewAccountController {
                     
                     PreparedStatement ps = con.prepareStatement(sql);
                     
-               
+                    
+             
                     
                     
                     
@@ -121,7 +125,12 @@ public class CreateNewAccountController {
                 
 
 			FXMLLoader loader = new FXMLLoader(WorkManager.class.getResource("AddStaff.fxml"));
+                        
 			AnchorPane pane = loader.load();
+                        AddStaffController x = loader.getController();
+                        x.setCompanyName(companyName.getText());
+                        
+                        
 			
 			Scene scene = new Scene(pane);
 			
@@ -143,12 +152,27 @@ public class CreateNewAccountController {
                         }
                         catch(Exception e)
                         {
-                            e.printStackTrace();
+                             Alert errorAlert = new Alert(AlertType.ERROR);
+                        errorAlert.setHeaderText("Error");
+                        errorAlert.setContentText(e.getMessage());
+                        errorAlert.showAndWait();
                         }
         
         
         
     }
+    
+    public String getCompanyName()
+    {
+        return companyName.getText();
+    }
+    
+    public void setCompanyName(String cName)
+    {
+        cName = companyName.getText();
+    }
+    
+
 
 }
 

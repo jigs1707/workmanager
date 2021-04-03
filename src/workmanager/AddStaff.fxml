@@ -96,7 +96,6 @@
             </TextField>
          </children>
       </GridPane>
-      <Button fx:id="finish" layoutX="521.0" layoutY="413.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="65.0" text="Finish" />
-      <Label fx:id="label" layoutX="250.0" layoutY="44.0" text="j" />
+      <Button fx:id="finish" layoutX="521.0" layoutY="413.0" mnemonicParsing="false" onAction="#onFinish" onMouseClicked="#onFinish" prefHeight="30.0" prefWidth="65.0" text="Finish" />
    </children>
 </AnchorPane>
