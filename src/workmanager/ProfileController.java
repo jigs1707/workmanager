@@ -19,19 +19,7 @@ import javafx.stage.Stage;
 public class ProfileController implements Initializable{
 
     @FXML
-    private MenuItem menuProfile;
-
-    @FXML
-    private MenuItem menuAvailabilities;
-
-    @FXML
-    private MenuItem menuRoster;
-
-    @FXML
-    private MenuItem menuStaff;
-
-    @FXML
-    private MenuItem menuStatus;
+    private MenuItem menuHome;
 
     @FXML
     private MenuItem menuSignout;
@@ -57,6 +45,37 @@ public class ProfileController implements Initializable{
         setCompanyName();
     }
     
+    
+    public void goHome()
+    {
+        try
+                        {
+			FXMLLoader loader = new FXMLLoader(WorkManager.class.getResource("Homepage.fxml"));
+			AnchorPane pane = loader.load();
+			
+			Scene scene = new Scene(pane);
+			
+			
+			Stage primaryStage = new Stage();
+			
+			primaryStage.setScene(scene);
+			primaryStage.setTitle("Homepage");
+                        primaryStage.setResizable(false);
+			primaryStage.show();
+                        
+                        Stage stage = (Stage) cName.getScene().getWindow();
+                            stage.close();
+                       
+			
+			
+			
+			
+                        }
+                        catch(Exception e)
+                        {
+                            e.printStackTrace();
+                        }
+    }
     
     public void signOut()
     {

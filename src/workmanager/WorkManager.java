@@ -49,6 +49,28 @@ public class WorkManager extends Application
 			primaryStage.setTitle("Login");
                         primaryStage.setResizable(false);
 			primaryStage.show();
+                        
+                        try {
+            
+            String host = "jdbc:derby://localhost:1527/WorkManager";
+            String uName = "administration";
+            String uPass = "admin";
+
+            con = DriverManager.getConnection(host, uName, uPass);
+
+            stmt = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
+
+            
+            //String sql = "SELECT * FROM STAFFDETAILS";
+            //rs = stmt.executeQuery(sql);
+            
+            
+            
+        } 
+        catch (SQLException ex) 
+        {
+            ex.printStackTrace();
+        }
                        
 			
 			

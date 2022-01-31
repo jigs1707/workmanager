@@ -53,7 +53,7 @@ public class AddStaffController implements Initializable{
     @FXML
     private ChoiceBox<String> rank;
     
-    ObservableList<String> rankList = FXCollections.observableArrayList("Manager", "Staff Member");
+    ObservableList<String> rankList = FXCollections.observableArrayList("Manager", "Crew Member");
     
 
     @FXML

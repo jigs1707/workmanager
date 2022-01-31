@@ -13,11 +13,7 @@
          <menus>
             <Menu mnemonicParsing="false" text="Menu">
                <items>
-                  <MenuItem fx:id="menuProfile" disable="true" mnemonicParsing="false" text="Profile" />
-                  <MenuItem fx:id="menuAvailabilities" mnemonicParsing="false" text="Availabilities" />
-                  <MenuItem fx:id="menuRoster" mnemonicParsing="false" text="Roster" />
-                  <MenuItem fx:id="menuStaff" mnemonicParsing="false" text="Staff" />
-                  <MenuItem fx:id="menuStatus" mnemonicParsing="false" text="Status" />
+                  <MenuItem fx:id="menuHome" mnemonicParsing="false" onAction="#goHome" text="Home" />
                   <MenuItem fx:id="menuSignout" mnemonicParsing="false" onAction="#signOut" text="Sign-Out" />
                </items>
             </Menu>
@@ -28,6 +24,6 @@
             <Font size="17.0" />
          </font>
       </Label>
-      <Label fx:id="cName" layoutX="182.0" layoutY="62.0" prefHeight="25.0" prefWidth="127.0" />
+      <Label fx:id="cName" layoutX="182.0" layoutY="62.0" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: grey;" />
    </children>
 </AnchorPane>

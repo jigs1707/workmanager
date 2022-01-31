@@ -33,12 +33,12 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <TextField fx:id="username" prefWidth="200.0" promptText="Username" GridPane.columnIndex="1">
+            <TextField fx:id="username" onKeyPressed="#keyPressed" prefWidth="200.0" promptText="Username" GridPane.columnIndex="1">
                <font>
                   <Font size="15.0" />
                </font>
             </TextField>
-            <PasswordField fx:id="password" prefWidth="200.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <PasswordField fx:id="password" onKeyPressed="#keyPressed" prefWidth="200.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font size="15.0" />
                </font>

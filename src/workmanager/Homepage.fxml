@@ -15,11 +15,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="Menu">
             <items>
-              <MenuItem fx:id="menuProfile" disable="true" mnemonicParsing="false" text="Profile" />
-                  <MenuItem fx:id="menuAvailabilities" disable="true" mnemonicParsing="false" text="Availabilities" />
-                  <MenuItem fx:id="menuRoster" disable="true" mnemonicParsing="false" text="Roster" />
-                  <MenuItem fx:id="menuStaff" disable="true" mnemonicParsing="false" text="Staff" />
-                  <MenuItem fx:id="menuStatus" disable="true" mnemonicParsing="false" text="Status" />
+              <MenuItem fx:id="menuHome" disable="true" mnemonicParsing="false" text="Home" />
                   <MenuItem fx:id="menuSignout" disable="true" mnemonicParsing="false" text="Sign-Out" />
             </items>
           </Menu>

@@ -19,19 +19,7 @@ import javafx.stage.Stage;
 public class HomepageController {
 
     @FXML
-    private MenuItem menuProfile;
-
-    @FXML
-    private MenuItem menuAvailabilities;
-
-    @FXML
-    private MenuItem menuRoster;
-
-    @FXML
-    private MenuItem menuStaff;
-
-    @FXML
-    private MenuItem menuStatus;
+    private MenuItem menuHome;
 
     @FXML
     private MenuItem menuSignout;
